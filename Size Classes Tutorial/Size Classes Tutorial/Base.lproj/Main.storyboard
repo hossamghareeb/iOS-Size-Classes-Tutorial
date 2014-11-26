@@ -28,6 +28,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice to meet you!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-hA-RMW">
                                         <rect key="frame" x="198" y="277" width="204" height="45"/>
@@ -38,18 +41,38 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="886-HL-LBc" firstAttribute="leading" secondItem="14o-Zn-yo1" secondAttribute="leading" constant="50" id="6dp-Rv-lNo"/>
                                     <constraint firstItem="886-HL-LBc" firstAttribute="top" secondItem="14o-Zn-yo1" secondAttribute="top" constant="50" id="JXh-cX-haz"/>
                                     <constraint firstAttribute="centerY" secondItem="Uxh-hA-RMW" secondAttribute="centerY" id="RFG-WO-tBA"/>
+                                    <constraint firstItem="Uxh-hA-RMW" firstAttribute="trailing" secondItem="14o-Zn-yo1" secondAttribute="trailing" constant="198" id="XFq-Ig-YvF">
+                                        <variation key="heightClass=compact" constant="-50"/>
+                                    </constraint>
                                     <constraint firstAttribute="centerX" secondItem="Uxh-hA-RMW" secondAttribute="centerX" id="aQl-iV-hhQ"/>
                                     <constraint firstItem="886-HL-LBc" firstAttribute="centerX" secondItem="14o-Zn-yo1" secondAttribute="centerX" id="pq7-OB-LaJ"/>
+                                    <constraint firstItem="886-HL-LBc" firstAttribute="centerY" secondItem="14o-Zn-yo1" secondAttribute="centerY" id="wOV-qN-xHV"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6dp-Rv-lNo"/>
+                                        <exclude reference="wOV-qN-xHV"/>
+                                        <exclude reference="XFq-Ig-YvF"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
+                                        <include reference="6dp-Rv-lNo"/>
+                                        <exclude reference="JXh-cX-haz"/>
                                         <exclude reference="pq7-OB-LaJ"/>
+                                        <include reference="wOV-qN-xHV"/>
+                                        <include reference="XFq-Ig-YvF"/>
+                                        <exclude reference="aQl-iV-hhQ"/>
                                     </mask>
                                 </variation>
                             </view>
