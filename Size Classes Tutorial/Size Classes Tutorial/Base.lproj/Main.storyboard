@@ -80,7 +80,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="14o-Zn-yo1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5dq-Hl-G7q"/>
-                            <constraint firstItem="14o-Zn-yo1" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="RK6-go-DYo"/>
+                            <constraint firstItem="14o-Zn-yo1" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="RK6-go-DYo">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-250"/>
+                            </constraint>
                             <constraint firstItem="14o-Zn-yo1" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="b66-we-AaX"/>
                             <constraint firstItem="14o-Zn-yo1" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="hMf-Rj-Rag"/>
                         </constraints>
